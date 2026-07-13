@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --ivory: #f8f5ee;
+  --ivory-2: #f0eadc;
+  --card: #ffffff;
+  --navy: #0f2138;
+  --navy-soft: #1d3555;
+  --navy-strong: #0a1830;
+  --cyan: #2fd1c7;
+  --cyan-soft: #ddf5f2;
+  --cyan-dark: #1fada5;
+  --line: #e6decf;
+  --text-mut: #68625a;
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-ivory-2: var(--ivory-2);
+  --color-card: var(--card);
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
+  --color-navy-strong: var(--navy-strong);
+  --color-cyan: var(--cyan);
+  --color-cyan-soft: var(--cyan-soft);
+  --color-cyan-dark: var(--cyan-dark);
+  --color-line: var(--line);
+  --color-text-mut: var(--text-mut);
+
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-work-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+/*
+  Custom element defaults must live in @layer base so Tailwind's
+  utilities layer (which is declared after base) can still override
+  them. Unlayered CSS always beats layered CSS regardless of
+  specificity, so without this, e.g. `text-ivory` on an <a> would
+  lose to a plain `a { color: inherit }` rule.
+*/
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--ivory);
+    color: var(--navy);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.12;
+  }
+
+  em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--cyan-dark);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--cyan-dark);
+    outline-offset: 3px;
+  }
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--cyan-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes wa-pulse {
+  0%,
+  100% {
+    box-shadow: 0 14px 28px -8px rgba(10, 24, 48, 0.45), 0 0 0 0 rgba(47, 209, 199, 0.4);
+  }
+  50% {
+    box-shadow: 0 14px 28px -8px rgba(10, 24, 48, 0.45), 0 0 0 10px rgba(47, 209, 199, 0);
+  }
+}
