@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import TrustStrip from "@/components/sections/TrustStrip";
 import Promos from "@/components/sections/Promos";
+import Banners from "@/components/sections/Banners";
 import Intro from "@/components/sections/Intro";
 import Attention from "@/components/sections/Attention";
 import Showcase from "@/components/sections/Showcase";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <Promos />
+      <Banners />
       <Intro />
       <Attention />
       <Showcase />
