@@ -50,7 +50,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-ivory/10">
         <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-5 flex flex-col sm:flex-row gap-2 justify-between text-xs text-ivory/50">
-          <span>© {new Date().getFullYear()} {SITE.name}</span>
+        <span>© {new Date().getFullYear()} {SITE.name} | desarrollado por <a href="https://www.instagram.com/mikmawi/" target="_blank" rel="noopener noreferrer">@mikmawi</a></span> 
           <span>
             {SITE.hours.map((h) => `${h.label} ${h.value}`).join(" · ")}
           </span>

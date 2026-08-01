@@ -4,7 +4,7 @@ export const SITE = {
   phoneDisplay: "095 881 5466",
   phoneIntl: "+593958815466",
   whatsappNumber: "593958815466",
-  email: "hola@rosariosalvatore.ec",
+  email: "info@rosariosalvatore.com",
   address: {
     street: "Real Audiencia Oe3-152 y de los Ciruelos",
     line2: "Torres Vista Real, Local #1",

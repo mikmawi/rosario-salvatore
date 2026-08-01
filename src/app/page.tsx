@@ -1,6 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import TrustStrip from "@/components/sections/TrustStrip";
-import Promos from "@/components/sections/Promos";
+// import Promos from "@/components/sections/Promos"; // desactivado: reemplazado por Banners
 import Banners from "@/components/sections/Banners";
 import Intro from "@/components/sections/Intro";
 import Attention from "@/components/sections/Attention";
@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Hero />
       <TrustStrip />
-      <Promos />
+      {/* <Promos /> desactivado: reemplazado por Banners */}
       <Banners />
       <Intro />
       <Attention />

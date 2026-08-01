@@ -31,7 +31,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Clínica Odontológica en Quito`,
+    default: `${SITE.name} — Clínica Especializada en Quito`,
     template: `%s — ${SITE.name}`,
   },
   description:
