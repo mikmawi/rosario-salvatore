@@ -50,14 +50,14 @@ export const metadata: Metadata = {
     locale: "es_EC",
     url: SITE.url,
     siteName: SITE.name,
-    title: `${SITE.name} — Clínica Odontológica en Quito`,
+    title: `${SITE.name} — Clínica Especializada en Quito`,
     description:
       "Diagnóstico claro, planes por escrito y un equipo que te acompaña en cada visita.",
     images: [{ url: "/og-cover.jpg", width: 1200, height: 630, alt: SITE.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — Clínica Odontológica en Quito`,
+    title: `${SITE.name} — Clínica Especializada en Quito`,
     description:
       "Diagnóstico claro, planes por escrito y un equipo que te acompaña en cada visita.",
     images: ["/og-cover.jpg"],
