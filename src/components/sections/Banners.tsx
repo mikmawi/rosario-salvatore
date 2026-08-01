@@ -6,9 +6,9 @@ import flyer2 from "../../../public/images/banners/flyer-2.webp";
 import flyer3 from "../../../public/images/banners/flyer-3.webp";
 
 const BANNERS = [
-  { image: flyer1, alt: "Promoción publicitaria 1", jpgPath: "/images/banners/flyer-1.jpg" },
-  { image: flyer2, alt: "Promoción publicitaria 2", jpgPath: "/images/banners/flyer-2.jpg" },
-  { image: flyer3, alt: "Promoción publicitaria 3", jpgPath: "/images/banners/flyer-3.jpg" },
+  { image: flyer1, alt: "Promoción publicitaria 1", promoPath: "/promo/1" },
+  { image: flyer2, alt: "Promoción publicitaria 2", promoPath: "/promo/2" },
+  { image: flyer3, alt: "Promoción publicitaria 3", promoPath: "/promo/3" },
 ];
 
 export default function Banners() {
@@ -28,7 +28,7 @@ export default function Banners() {
             <RevealItem key={i}>
               <a
                 href={waLink(
-                  `Hola, quiero más información sobre esta promoción: ${SITE.url}${banner.jpgPath}`
+                  `Hola, quiero más información sobre esta promoción: ${SITE.url}${banner.promoPath}`
                 )}
                 className="group block rounded-[24px] bg-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:shadow-navy/[0.08] transition-shadow"
               >
